@@ -1,0 +1,78 @@
+steps:
+  REGION-82fa44e4-3270-47b0-8ee8-d04c8f01b792:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SAMPLE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 161af8e0-4300-4483-9c77-858f0526d9eb
+              stepCounter: 82fa44e4-3270-47b0-8ee8-d04c8f01b792
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: aec22cbb-2881-412f-8acf-6235d4163782
+              stepCounter: 82fa44e4-3270-47b0-8ee8-d04c8f01b792
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7fd7bd9e-7205-4c33-a18e-1ce5ae86e1de
+              stepCounter: 82fa44e4-3270-47b0-8ee8-d04c8f01b792
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3acc0229-4de8-465f-91dd-ff11136363de
+              stepCounter: 82fa44e4-3270-47b0-8ee8-d04c8f01b792
+            config: {}
+            dataType: TIMESTAMP_LTZ(9)
+            defaultValue: ""
+            description: ""
+            name: R_LOAD_TIMESTAMP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 82fa44e4-3270-47b0-8ee8-d04c8f01b792
