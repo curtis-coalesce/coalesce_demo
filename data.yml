@@ -1551,5 +1551,10 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-1:
+    id: "1"
+    name: New Subgraph
+    steps:
+      - a793c2fd-66b4-440d-ad9f-21b66e6fa133
 version: 2
