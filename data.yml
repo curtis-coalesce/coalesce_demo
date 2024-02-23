@@ -32,16 +32,21 @@ jobs:
     steps: []
     subgraphs: []
 locations:
+  DW:
+    mappingDefinitions:
+      "2":
+        database: ""
+        schema: ""
   SAMPLE:
     mappingDefinitions:
       "2":
         database: CROOD_DEV
         schema: SOURCE_DATA
-  WORK:
+  STAGE:
     mappingDefinitions:
       "2":
-        database: CROOD_DEV
-        schema: SOURCE_DATA
+        database: ""
+        schema: ""
 macros:
   Macro-1:
     id: "1"
