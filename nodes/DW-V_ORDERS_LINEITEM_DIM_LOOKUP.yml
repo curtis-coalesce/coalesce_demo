@@ -1,0 +1,70 @@
+steps:
+  V_ORDERS_LINEITEM_DIM_LOOKUP-01df0a8b-ec73-44d6-8208-2eab570e3db0:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: DW
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: c4b8a958-9a31-4cee-95e0-38b0acbff076
+              stepCounter: 01df0a8b-ec73-44d6-8208-2eab570e3db0
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_TOTALPRICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: efe31c3c-3535-4bd7-b1dc-c3da8d0a8c0a
+                    stepCounter: eaaf7582-89bf-41ef-99da-4d248bb86b0f
+                transform: ""
+          - columnReference:
+              columnCounter: 132b402a-c1fc-4367-b393-680cd2ef6b94
+              stepCounter: 01df0a8b-ec73-44d6-8208-2eab570e3db0
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 55117bf8-4782-472f-af03-1094f289d1c8
+                    stepCounter: eaaf7582-89bf-41ef-99da-4d248bb86b0f
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: |-
+                {{ stage('Override Create SQL') }}
+                	CREATE OR REPLACE VIEW {{ ref('DW', 'V_ORDERS_LINEITEM_DIM_LOOKUP')}} AS (
+                	SELECT 
+                	 sum(O_TOTALPRICE) AS O_TOTALPRICE,
+                 	O_ORDERDATE AS O_ORDERDATE
+                 	FROM {{ ref('DW', 'STG_ORDERS_LINEITEM_DIM_LOOKUP') }}
+                 	group by O_ORDERDATE
+                	)
+            dependencies:
+              - locationName: DW
+                nodeName: STG_ORDERS_LINEITEM_DIM_LOOKUP
+            join:
+              joinCondition: FROM {{ ref('DW', 'STG_ORDERS_LINEITEM_DIM_LOOKUP') }} "STG_ORDERS_LINEITEM_DIM_LOOKUP"
+            name: V_ORDERS_LINEITEM_DIM_LOOKUP
+            noLinkRefs: []
+      name: V_ORDERS_LINEITEM_DIM_LOOKUP
+      overrideSQL: true
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: 01df0a8b-ec73-44d6-8208-2eab570e3db0
