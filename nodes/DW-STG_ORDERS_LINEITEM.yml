@@ -394,6 +394,27 @@ steps:
                   - columnCounter: db1a8f0d-f43f-4b7f-875c-d0ab8d3b7889
                     stepCounter: 82e88c46-0d20-4789-8309-3a4ef97a5765
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b85fb069-08a9-4e79-a1cb-dc077f4fe10a
+              stepCounter: 9c526ab3-9503-4a0e-ba14-c0df2cadf2dc
+            config: {}
+            dataType: Number
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: DAYS_TO_SHIP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: DATEDIFF('DAY',"STG_ORDERS"."O_ORDERDATE","STG_LINEITEM"."L_SHIPDATE")
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
