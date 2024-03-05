@@ -399,10 +399,10 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 48a8edd9-6d68-4f96-9bb3-665a132b4d88
+              columnCounter: 82781788-d8e5-442b-8625-d3014d05da1e
               stepCounter: 9c526ab3-9503-4a0e-ba14-c0df2cadf2dc
             config: {}
-            dataType: number
+            dataType: Number
             defaultValue: ""
             description: ""
             keyColumnType: None

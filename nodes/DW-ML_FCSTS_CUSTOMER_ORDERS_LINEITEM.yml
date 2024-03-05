@@ -1,5 +1,5 @@
 steps:
-  ML_FCSTS_CUSTOMER_ORDERS_LINEITEM-6d22377f-4703-483e-9e9a-7002adcff5d9:
+  ML_FCSTS_CUSTOMER_ORDERS_LINEITEM-6e09bd77-bc2c-4f58-a8b8-3d2926a33725:
     operation:
       config:
         exvar: false
@@ -7,11 +7,11 @@ steps:
         multiseries: false
         seriescol: null
         tgtcol:
-          columnCounter: 105d4e09-de5e-49df-830f-8d44860b58c6
-          stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+          columnCounter: 80384ce8-0f88-457a-869e-c6e0241a4be5
+          stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
         tscol:
-          columnCounter: 76567ff9-d15e-47ef-9afd-590bfc54347d
-          stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+          columnCounter: 70764271-2d0d-4360-9a7a-9a1de14824b9
+          stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
       database: ""
       deployEnabled: true
       description: ""
@@ -22,22 +22,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 105d4e09-de5e-49df-830f-8d44860b58c6
-              stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
-            dataType: NUMBER(12,2)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: O_TOTALPRICE
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 5d7a08d3-a9cb-4f52-88dd-606293f97837
-                    stepCounter: f822d1c3-91a3-47e3-a28d-018b189a49f5
-                transform: sum("V_CUSTOMER_ORDERS_LINEITEM"."O_TOTALPRICE")
-          - columnReference:
-              columnCounter: 76567ff9-d15e-47ef-9afd-590bfc54347d
-              stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+              columnCounter: 70764271-2d0d-4360-9a7a-9a1de14824b9
+              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
             dataType: DATE
             description: ""
             hashColumns: []
@@ -46,16 +32,30 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 7d521c70-0711-4b61-bafd-196b514db301
-                    stepCounter: f822d1c3-91a3-47e3-a28d-018b189a49f5
+                  - columnCounter: f4d97938-aefe-44d3-962f-1eeb4526e4c3
+                    stepCounter: 9bbd36de-66ee-45af-8cd6-09d682bcf7f8
                 transform: ""
+          - columnReference:
+              columnCounter: 80384ce8-0f88-457a-869e-c6e0241a4be5
+              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_TOTALPRICE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ba768184-9e2d-4079-8225-f48897181d59
+                    stepCounter: 9bbd36de-66ee-45af-8cd6-09d682bcf7f8
+                transform: sum("V_CUSTOMER_ORDERS_LINEITEM"."O_TOTALPRICE")
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ad1740ef-fa2a-41ba-a6f8-e1aaf97d5ae1
-              stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+              columnCounter: d1a1afd2-0801-4fda-99f0-912873859866
+              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
             config: {}
             dataType: FLOAT
             defaultValue: ""
@@ -72,8 +72,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: df76bbe1-7534-4319-a698-d19f13238a19
-              stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+              columnCounter: 417e6155-528f-44f8-86ba-d4001c79632b
+              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
             config: {}
             dataType: FLOAT
             defaultValue: ""
@@ -90,8 +90,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 6c5676b5-b7ca-4695-9304-3734ece02e66
-              stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+              columnCounter: fb4e56f4-d7e4-4795-ad43-059d1d662a85
+              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
             config: {}
             dataType: FLOAT
             defaultValue: ""
@@ -107,7 +107,7 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              V_CUSTOMER_ORDERS_LINEITEM: f822d1c3-91a3-47e3-a28d-018b189a49f5
+              V_CUSTOMER_ORDERS_LINEITEM: 9bbd36de-66ee-45af-8cd6-09d682bcf7f8
             customSQL:
               customSQL: ""
             dependencies:
@@ -124,4 +124,4 @@ steps:
       schema: ""
       sqlType: "2"
       type: sql
-    stepCounter: 6d22377f-4703-483e-9e9a-7002adcff5d9
+    stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725

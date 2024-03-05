@@ -1,0 +1,63 @@
+steps:
+  DAILY_14_TOTAL_SHORT-593a347e-0c46-45cd-9150-62af796cecaa:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: 3RD_PARTY_DATA
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f39cf32b-8df2-42f1-9e1b-9a1975447790
+              stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: V
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0be86822-c62b-40b6-af9b-8413d1b53349
+              stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: T
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0b3311f8-f204-44a6-bdfa-8df3357f112d
+              stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+            config: {}
+            dataType: TIMESTAMP_LTZ(9)
+            defaultValue: ""
+            description: ""
+            name: LOAD_TIMESTAMP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('3RD_PARTY_DATA', 'DAILY_14_TOTAL_SHORT') }}
+      name: DAILY_14_TOTAL_SHORT
+      schema: ""
+      sqlType: Source
+      table: DAILY_14_TOTAL_SHORT
+      type: sourceInput
+    stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa

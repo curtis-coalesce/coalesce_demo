@@ -2,6 +2,11 @@ defaultStorageMapping: DW
 installedPackages: {}
 jobs: {}
 locations:
+  3RD_PARTY_DATA:
+    mappingDefinitions:
+      "2":
+        database: CROOD_DEV
+        schema: WEATHER
   DW:
     mappingDefinitions:
       "2":
