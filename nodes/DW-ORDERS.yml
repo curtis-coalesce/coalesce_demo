@@ -1,5 +1,5 @@
 steps:
-  ORDERS-9748c486-6f79-4f1c-9b46-a4cd96f60e17:
+  ORDERS-6f9cdae3-a300-49eb-8e6d-b2a09f2533a9:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 22076673-32d0-4ab4-9ebe-f1af3dea66d4
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 3cdd2b55-5850-4b90-8ad4-9f3b5b4ed49c
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 44d8b8e2-fc38-4095-b190-6b85c9c3ae6c
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 71b9b952-f8cd-4f74-b57d-c67bea87071d
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: b0ee9b98-fbf1-4023-99cb-618dbbe6a745
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: a55b6422-773c-47e5-af87-c822736d2408
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: VARCHAR(1)
             defaultValue: ""
@@ -58,8 +58,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 083c6490-260a-493e-86a3-628495b2b17c
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 1e7b46a5-12c2-41f2-94a3-ce6329965a5c
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: NUMBER(12,2)
             defaultValue: ""
@@ -73,8 +73,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 99881626-2f47-4690-8520-868e88c1a185
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 9bf10cf4-a6e9-4757-80e2-8332e3716e8e
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: DATE
             defaultValue: ""
@@ -88,8 +88,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 2ca579b8-7de9-483e-b0cb-9c46e8450ff8
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 52ebb4bc-8de3-47ca-85c3-9fbb7ff56c71
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: VARCHAR(15)
             defaultValue: ""
@@ -103,8 +103,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: ba791651-f8dd-413e-898e-4d472d02e7c2
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 6dce803b-8c19-4feb-baab-6b3d30962ea3
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: VARCHAR(15)
             defaultValue: ""
@@ -118,8 +118,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 2136cfdf-b2ca-40d0-8bab-cdc0bb755520
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: b8a65113-a570-4751-a742-75fc888952d6
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: NUMBER(38,0)
             defaultValue: ""
@@ -133,8 +133,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 50cc1bd6-f6d3-4277-801d-1014f5f218d2
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 40a176e8-dba3-4bad-b5f8-11891ac31556
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: VARCHAR(79)
             defaultValue: ""
@@ -148,8 +148,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f65b28a7-db0e-41f4-900e-27fc5650bd1e
-              stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+              columnCounter: 878cb7ff-95a4-49f0-9e1c-64f3ac4405e5
+              stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
             config: {}
             dataType: TIMESTAMP_LTZ(9)
             defaultValue: ""
@@ -165,4 +165,4 @@ steps:
       sqlType: Source
       table: ORDERS
       type: sourceInput
-    stepCounter: 9748c486-6f79-4f1c-9b46-a4cd96f60e17
+    stepCounter: 6f9cdae3-a300-49eb-8e6d-b2a09f2533a9
