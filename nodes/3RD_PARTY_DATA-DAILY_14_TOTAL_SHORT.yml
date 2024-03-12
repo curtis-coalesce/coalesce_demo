@@ -1,5 +1,5 @@
 steps:
-  DAILY_14_TOTAL_SHORT-593a347e-0c46-45cd-9150-62af796cecaa:
+  DAILY_14_TOTAL_SHORT-7fc1c935-0738-47e0-8af3-09a25826caf5:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: f39cf32b-8df2-42f1-9e1b-9a1975447790
-              stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+              columnCounter: 67da2606-6afc-4a2d-b8e9-871c0b6dfde5
+              stepCounter: 7fc1c935-0738-47e0-8af3-09a25826caf5
             config: {}
             dataType: VARIANT
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0be86822-c62b-40b6-af9b-8413d1b53349
-              stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+              columnCounter: fb89e10b-502d-4a4c-a141-63300ccc9a30
+              stepCounter: 7fc1c935-0738-47e0-8af3-09a25826caf5
             config: {}
             dataType: TIMESTAMP_NTZ(9)
             defaultValue: ""
@@ -43,8 +43,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0b3311f8-f204-44a6-bdfa-8df3357f112d
-              stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+              columnCounter: a58393a4-6eac-44b2-8a2c-65941b6a4f52
+              stepCounter: 7fc1c935-0738-47e0-8af3-09a25826caf5
             config: {}
             dataType: TIMESTAMP_LTZ(9)
             defaultValue: ""
@@ -60,4 +60,4 @@ steps:
       sqlType: Source
       table: DAILY_14_TOTAL_SHORT
       type: sourceInput
-    stepCounter: 593a347e-0c46-45cd-9150-62af796cecaa
+    stepCounter: 7fc1c935-0738-47e0-8af3-09a25826caf5

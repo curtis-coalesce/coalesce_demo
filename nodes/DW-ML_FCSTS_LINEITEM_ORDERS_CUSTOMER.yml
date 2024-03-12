@@ -1,5 +1,5 @@
 steps:
-  ML_FCSTS_CUSTOMER_ORDERS_LINEITEM-6e09bd77-bc2c-4f58-a8b8-3d2926a33725:
+  ML_FCSTS_LINEITEM_ORDERS_CUSTOMER-2158d9b2-b61a-429b-8a7b-84a7b3baecb5:
     operation:
       config:
         exvar: false
@@ -7,11 +7,11 @@ steps:
         multiseries: false
         seriescol: null
         tgtcol:
-          columnCounter: 80384ce8-0f88-457a-869e-c6e0241a4be5
-          stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+          columnCounter: 75e50ea0-7bb4-4d7f-8038-2cca324c04de
+          stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
         tscol:
-          columnCounter: 70764271-2d0d-4360-9a7a-9a1de14824b9
-          stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+          columnCounter: 26c9bf7e-9317-46b9-bd67-c444e261bab3
+          stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
       database: ""
       deployEnabled: true
       description: ""
@@ -22,8 +22,8 @@ steps:
         appliedNodeTests: []
         columns:
           - columnReference:
-              columnCounter: 70764271-2d0d-4360-9a7a-9a1de14824b9
-              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+              columnCounter: 26c9bf7e-9317-46b9-bd67-c444e261bab3
+              stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
             dataType: DATE
             description: ""
             hashColumns: []
@@ -32,12 +32,12 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: f4d97938-aefe-44d3-962f-1eeb4526e4c3
-                    stepCounter: 9bbd36de-66ee-45af-8cd6-09d682bcf7f8
+                  - columnCounter: 422be922-6ea1-4038-9a22-380baff2ad6c
+                    stepCounter: ec904440-3e6e-4d54-a28d-fd4c5df21526
                 transform: ""
           - columnReference:
-              columnCounter: 80384ce8-0f88-457a-869e-c6e0241a4be5
-              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+              columnCounter: 75e50ea0-7bb4-4d7f-8038-2cca324c04de
+              stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
             dataType: NUMBER(12,2)
             description: ""
             hashColumns: []
@@ -46,16 +46,16 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: ba768184-9e2d-4079-8225-f48897181d59
-                    stepCounter: 9bbd36de-66ee-45af-8cd6-09d682bcf7f8
-                transform: sum("V_CUSTOMER_ORDERS_LINEITEM"."O_TOTALPRICE")
+                  - columnCounter: e91ecffa-4f50-4d43-8ed0-8b2c648221af
+                    stepCounter: ec904440-3e6e-4d54-a28d-fd4c5df21526
+                transform: sum("V_LINEITEM_ORDERS_CUSTOMER"."O_TOTALPRICE")
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: d1a1afd2-0801-4fda-99f0-912873859866
-              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+              columnCounter: 881f41bd-0992-420e-9118-66384aa03775
+              stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
             config: {}
             dataType: FLOAT
             defaultValue: ""
@@ -72,8 +72,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 417e6155-528f-44f8-86ba-d4001c79632b
-              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+              columnCounter: f71d68ed-338c-400a-91b0-76968db9ae9c
+              stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
             config: {}
             dataType: FLOAT
             defaultValue: ""
@@ -90,8 +90,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: fb4e56f4-d7e4-4795-ad43-059d1d662a85
-              stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+              columnCounter: e4268211-88b2-4df0-a2a1-5e8cd8f3f726
+              stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
             config: {}
             dataType: FLOAT
             defaultValue: ""
@@ -107,21 +107,21 @@ steps:
         enabledColumnTestIDs: []
         sourceMapping:
           - aliases:
-              V_CUSTOMER_ORDERS_LINEITEM: 9bbd36de-66ee-45af-8cd6-09d682bcf7f8
+              V_LINEITEM_ORDERS_CUSTOMER: ec904440-3e6e-4d54-a28d-fd4c5df21526
             customSQL:
               customSQL: ""
             dependencies:
               - locationName: DW
-                nodeName: V_CUSTOMER_ORDERS_LINEITEM
+                nodeName: V_LINEITEM_ORDERS_CUSTOMER
             join:
               joinCondition: |-
-                FROM {{ ref('DW', 'V_CUSTOMER_ORDERS_LINEITEM') }} "V_CUSTOMER_ORDERS_LINEITEM"
+                FROM {{ ref('DW', 'V_LINEITEM_ORDERS_CUSTOMER') }} "V_LINEITEM_ORDERS_CUSTOMER"
                 group by "O_ORDERDATE"
-            name: ML_FCSTS_CUSTOMER_ORDERS_LINEITEM
+            name: ML_FCSTS_LINEITEM_ORDERS_CUSTOMER
             noLinkRefs: []
-      name: ML_FCSTS_CUSTOMER_ORDERS_LINEITEM
+      name: ML_FCSTS_LINEITEM_ORDERS_CUSTOMER
       overrideSQL: false
       schema: ""
       sqlType: "2"
       type: sql
-    stepCounter: 6e09bd77-bc2c-4f58-a8b8-3d2926a33725
+    stepCounter: 2158d9b2-b61a-429b-8a7b-84a7b3baecb5
