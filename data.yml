@@ -12,7 +12,13 @@ locations:
       "2":
         database: CROOD_DEV
         schema: SOURCE_DATA
-macros: {}
+macros:
+  Macro-1:
+    id: "1"
+    macroString: |-
+      {% macro snake_case(column)%}
+        {{(column.name[0]|upper + column.name[1:]|replace('A','_A')|replace('B','_B')|replace('C','_C')|replace('D','_D')|replace('E','_E')|replace('F','_F')|replace('G','_G')|replace('H','_H')|replace('I','_I')|replace('J','_J')|replace('K','_K')|replace('L','_L')|replace('M','_M')|replace('N','_N')|replace('O','_O')|replace('P','_P')|replace('Q','_Q')|replace('R','_R')|replace('S','_S')|replace('T','_T')|replace('U','_U')|replace('V','_V')|replace('W','_W')|replace('X','_X')|replace('Y','_Y')|replace('Z','_Z')|upper)|replace("_I_D","_ID")}}
+      {%- endmacro %}
 packages: {}
 projects: {}
 stepTypes:
@@ -215,10 +221,10 @@ stepTypes:
       defaultStorageLocation: DW
       error: null
       nodeMetadataSpec: |
-        capitalized: Rosetta_Stone
-        short: Rosetta_Stone
+        capitalized: Curtex_LLM_Sandbox
+        short: Curtex_LLM_Sandbox
         tagColor: 'black'
-        plural: Rosetta_Stone
+        plural: Curtex_LLM_Sandbox
 
         config:
         - groupName: Translation Node Input
@@ -324,7 +330,7 @@ stepTypes:
                     {%- if not loop.last -%}, {% endif %}
                 {%- endfor %}
                 {{ source.join }}
-    name: Rosetta_Stone
+    name: Curtex_LLM_Sandbox
     version: 1
   StepType-Dimension:
     id: Dimension

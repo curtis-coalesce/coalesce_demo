@@ -410,6 +410,22 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cf9fdeaf-ff68-44c4-b254-6a6708415366
+              stepCounter: 647cac71-34de-4da9-884d-e38fd2633d76
+            dataType: number
+            description: ""
+            name: Days_to_ship
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c6c4135d-0a0b-4317-a947-b7c4869c2fdd
+                    stepCounter: 3f581b73-097b-4ccc-823f-6f3379c6fd55
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
