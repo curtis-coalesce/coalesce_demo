@@ -426,6 +426,27 @@ steps:
                   - columnCounter: c6c4135d-0a0b-4317-a947-b7c4869c2fdd
                     stepCounter: 3f581b73-097b-4ccc-823f-6f3379c6fd55
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 46a1a62b-07f4-4c4f-98a2-b564e7404220
+              stepCounter: 647cac71-34de-4da9-884d-e38fd2633d76
+            config: {}
+            dataType: float
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: Comment_Sentiment
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: snowflake.cortex.sentiment(L_COMMENT)
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
